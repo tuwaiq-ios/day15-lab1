@@ -5,5 +5,4 @@
 
 
 <img src="https://user-images.githubusercontent.com/44459664/137201276-fec389e8-7641-4593-8be5-0a1f48be017f.png" width="280" height="460"/>
-![image](https://user-images.githubusercontent.com/44459664/137201276-fec389e8-7641-4593-8be5-0a1f48be017f.png)
 
