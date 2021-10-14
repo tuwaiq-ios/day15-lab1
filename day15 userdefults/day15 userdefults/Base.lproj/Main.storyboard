@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="day15_userdefults" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZDL-ch-8Hq">
+                                <rect key="frame" x="48" y="181" width="311" height="34"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PFV-h6-xlr">
+                                <rect key="frame" x="48" y="232" width="311" height="34"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ajI-wt-CNx">
+                                <rect key="frame" x="48" y="294" width="311" height="34"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ConfirmPassword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ph-ct-Feg">
+                                <rect key="frame" x="48" y="362" width="311" height="34"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSt-fE-gOY">
+                                <rect key="frame" x="74" y="539" width="267" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Register"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wuF-Ky-tHN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="❒Remmber me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptD-ru-Tqt">
+                                <rect key="frame" x="24" y="438" width="254" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sbz-nX-kAU">
+                                <rect key="frame" x="89" y="104" width="236" height="32"/>
+                                <segments>
+                                    <segment title="Register"/>
+                                    <segment title="Login"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segment:" destination="BYZ-38-t0r" eventType="valueChanged" id="lpq-bZ-R2A"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.86507633750000001" blue="0.90448510609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ZDL-ch-8Hq" firstAttribute="top" secondItem="sbz-nX-kAU" secondAttribute="bottom" constant="46" id="48f-Bf-ZYa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NSt-fE-gOY" secondAttribute="trailing" constant="73" id="4C2-MS-gSZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NSt-fE-gOY" secondAttribute="bottom" constant="292" id="5IT-aI-6Kf"/>
+                            <constraint firstItem="PFV-h6-xlr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="825-6N-fWJ"/>
+                            <constraint firstItem="ZDL-ch-8Hq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="9j4-Om-Gvs"/>
+                            <constraint firstItem="ajI-wt-CNx" firstAttribute="top" secondItem="PFV-h6-xlr" secondAttribute="bottom" constant="28" id="B5n-vg-EYo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sbz-nX-kAU" secondAttribute="trailing" constant="89" id="BRb-i9-N30"/>
+                            <constraint firstItem="NSt-fE-gOY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="BuV-me-0Lg"/>
+                            <constraint firstItem="NSt-fE-gOY" firstAttribute="top" secondItem="ptD-ru-Tqt" secondAttribute="bottom" constant="80" id="G5v-Gw-aRK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ajI-wt-CNx" secondAttribute="trailing" constant="55" id="Nqr-60-YOz"/>
+                            <constraint firstItem="ajI-wt-CNx" firstAttribute="top" secondItem="PFV-h6-xlr" secondAttribute="bottom" constant="28" id="RIX-zN-c2a"/>
+                            <constraint firstItem="sbz-nX-kAU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="Tsv-p2-llM"/>
+                            <constraint firstItem="PFV-h6-xlr" firstAttribute="top" secondItem="ZDL-ch-8Hq" secondAttribute="bottom" constant="17" id="VXd-i1-ofb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZDL-ch-8Hq" secondAttribute="trailing" constant="55" id="WMm-dK-ZUZ"/>
+                            <constraint firstItem="ptD-ru-Tqt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="baH-Jd-faj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PFV-h6-xlr" secondAttribute="trailing" constant="55" id="dCe-FF-SWm"/>
+                            <constraint firstItem="PFV-h6-xlr" firstAttribute="top" secondItem="ZDL-ch-8Hq" secondAttribute="bottom" constant="17" id="gNW-lY-wc5"/>
+                            <constraint firstItem="8Ph-ct-Feg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="gnP-6R-15H"/>
+                            <constraint firstItem="8Ph-ct-Feg" firstAttribute="top" secondItem="ajI-wt-CNx" secondAttribute="bottom" constant="34" id="khC-Jd-4Sg"/>
+                            <constraint firstItem="8Ph-ct-Feg" firstAttribute="top" secondItem="ajI-wt-CNx" secondAttribute="bottom" constant="34" id="klD-S0-59c"/>
+                            <constraint firstItem="ajI-wt-CNx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="lxR-MM-gVj"/>
+                            <constraint firstItem="ZDL-ch-8Hq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="mn4-33-82n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Ph-ct-Feg" secondAttribute="trailing" constant="55" id="t6s-Rb-1Ik"/>
+                            <constraint firstItem="ptD-ru-Tqt" firstAttribute="top" secondItem="8Ph-ct-Feg" secondAttribute="bottom" constant="42" id="ubW-nb-s2f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ptD-ru-Tqt" secondAttribute="trailing" constant="136" id="wtV-uk-O9h"/>
+                            <constraint firstItem="sbz-nX-kAU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="zqz-UT-kah"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segment1" destination="sbz-nX-kAU" id="z8b-T0-fMD"/>
+                        <outlet property="tf" destination="ZDL-ch-8Hq" id="fIZ-q4-jid"/>
+                        <outlet property="tf2" destination="PFV-h6-xlr" id="YZp-i4-pmV"/>
+                        <outlet property="tf3" destination="ajI-wt-CNx" id="8f4-Bl-1CL"/>
+                        <outlet property="tf4" destination="8Ph-ct-Feg" id="LUI-UD-hQH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-422" y="-301"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
