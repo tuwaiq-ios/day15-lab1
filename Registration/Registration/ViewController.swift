@@ -53,6 +53,14 @@ class ViewController: UIViewController, UITextFieldDelegate{
             let savedName = UserDefaults.standard.value(forKey: "name1") as? String
             tf3.text = savedName
             
+            let mail =  UserDefaults.standard.value(forKey: "namekey") as? String
+            tf1.text = mail
+            
+            let word = UserDefaults.standard.value(forKey: "passkey") as? String
+            tf2.text = word
+            
+            
+            
         // Do any additional setup after loading the view.
     }
     
