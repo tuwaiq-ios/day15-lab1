@@ -24,12 +24,23 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     
     @IBAction func button1(_ sender: Any) {
-        let email = tf1.text
-        let pass = tf2.text
+        
+        let  email = tf1.text
+         let pass = tf2.text
         
         UserDefaults.standard.set(email,forKey: "namekey")
         
         UserDefaults.standard.set(pass,forKey: "passkey")
+        
+        
+        
+        var name = tf3.text ?? "Lareen"
+        if name.isEmpty {
+            name = "lareen"
+        }
+        UserDefaults.standard.set(name,
+        forKey: "name1")
+    
     }
     
         override func viewDidLoad() {
@@ -38,6 +49,10 @@ class ViewController: UIViewController, UITextFieldDelegate{
         tf2.delegate = self
         tf3.delegate = self
         tf4.delegate = self
+            
+            let savedName = UserDefaults.standard.value(forKey: "name1") as? String
+            tf3.text = savedName
+            
         // Do any additional setup after loading the view.
     }
     
