@@ -54,12 +54,12 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="S46-NI-ccH">
-                                <rect key="frame" x="99" y="100" width="215" height="31"/>
+                                <rect key="frame" x="99" y="100" width="215" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.29713908230000002" green="0.51504107600000004" blue="0.51504107600000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Register"/>
+                                    <segment title="Login"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -78,6 +78,7 @@
                         <outlet property="emailTF" destination="jX7-y4-OnI" id="mWY-2u-EZd"/>
                         <outlet property="nameTF" destination="Pmd-wR-XPU" id="Fqe-H7-9Pd"/>
                         <outlet property="passTF" destination="Lbg-hY-8ZO" id="l9M-Pg-a7s"/>
+                        <outlet property="regLogBtn" destination="d3l-qk-XVN" id="QjB-7y-4m1"/>
                         <outlet property="segControl" destination="S46-NI-ccH" id="rSG-91-Bof"/>
                     </connections>
                 </viewController>

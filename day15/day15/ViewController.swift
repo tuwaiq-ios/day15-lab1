@@ -7,13 +7,17 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController{
+    
     
     @IBOutlet weak var segControl: UISegmentedControl!
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passTF: UITextField!
     @IBOutlet weak var confirmPassTF: UITextField!
+    @IBOutlet weak var regLogBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,14 +35,22 @@ class ViewController: UIViewController{
     
     @IBAction func segmentCont(_ sender: UISegmentedControl){
         switch sender.selectedSegmentIndex{
-            case 0:
-                emailTF.isHidden = false
-                passTF.isHidden = false
-            case 1:
-                confirmPassTF.isHidden = true
-                nameTF.isHidden = true
-            default:
-                break;
+        case 0:
+            view.backgroundColor = .white
+            nameTF.isHidden = false
+            emailTF.isHidden = false
+            passTF.isHidden = false
+            confirmPassTF.isHidden = false
+            
+            regLogBtn.setTitle("Register", for: .normal)
+        case 1:
+            view.backgroundColor = .opaqueSeparator
+            confirmPassTF.isHidden = true
+            nameTF.isHidden = true
+            
+            regLogBtn.setTitle("Loging", for: .normal)
+        default:
+            break;
     }
     }
     
