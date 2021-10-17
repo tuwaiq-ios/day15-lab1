@@ -1,4 +1,4 @@
-# day15-lab1
+# Day15 Lab1
 
 # Task 
 1. Create a user registration page that enable user to enter his information in the registration form. Then, the user's information should be stored locally. After that, get the data from the user's defualts database.
